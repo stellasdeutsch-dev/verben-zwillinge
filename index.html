@@ -632,6 +632,12 @@ a{color:inherit}
 .pick2 .res p{margin:0;font:400 18px/1.4 var(--f-serif)}
 .pick2 .res .row{margin-top:6px}
 
+.btn.wa{background:#1f7a4d;color:#fff;box-shadow:4px 4px 0 var(--ink)}
+.btn.wa.out{background:transparent;color:var(--white);box-shadow:inset 0 0 0 1.5px #3fbf7f}
+.payalt{margin-top:22px;padding:18px 16px;display:grid;gap:12px;border:1.5px dashed var(--line)}
+@media (min-width:760px){.payalt{grid-template-columns:1fr auto;align-items:center}}
+.payalt p{margin:0;font:400 18px/1.4 var(--f-serif);color:#d9d2c3}
+.payalt p b{font:600 16px/1.2 var(--f-wide);letter-spacing:-.03em;color:var(--white);display:block;margin-bottom:4px}
 /* reveal fallback */
 .rv{transition:translate .8s cubic-bezier(.2,.9,.3,1),rotate .8s}
 .js .rv:not(.in){translate:0 26px}
@@ -1345,7 +1351,7 @@ a{color:inherit}
     <h2 class="mega s split">От оплаты <span class="it">до первой темы</span> за 5 минут</h2>
     <div class="how" id="how">
       <div class="rail"><i id="howFill"></i></div>
-      <div class="st"><span class="dot">1</span><h3>Оплачиваешь один раз</h3><p>По ссылке на lava.top. Выбираешь A0–A2, B1–C1 или всё сразу.</p><div class="vis"><span><svg class="ic"><use href="#i-credit-card"/></svg>30 €</span><span><svg class="ic"><use href="#i-x"/></svg>без подписки</span></div></div>
+      <div class="st"><span class="dot">1</span><h3>Оплачиваешь один раз</h3><p>По ссылке на lava.top или через WhatsApp. Выбираешь A0–A2, B1–C1 или всё сразу.</p><div class="vis"><span><svg class="ic"><use href="#i-credit-card"/></svg>30 €</span><span><svg class="ic"><use href="#i-x"/></svg>без подписки</span><span><svg class="ic"><use href="#i-message-circle"/></svg>WhatsApp</span></div></div>
       <div class="st"><span class="dot">2</span><h3>Получаешь доступ к платформе</h3><p>Открываешь в Notion. На телефоне, ноутбуке или планшете.</p><div class="vis"><span><svg class="ic"><use href="#i-smartphone"/></svg>телефон</span><span><svg class="ic"><use href="#i-wifi-off"/></svg>офлайн</span></div></div>
       <div class="st"><span class="dot">3</span><h3>Проходишь тему за 10 минут</h3><p>Объяснение → видео → упражнение → разбор ответов. Как здесь, только тем 340+.</p><div class="vis"><span><svg class="ic"><use href="#i-book-open"/></svg>читаешь</span><span><svg class="ic"><use href="#i-play"/></svg>смотришь</span><span><svg class="ic"><use href="#i-puzzle"/></svg>делаешь</span><span><svg class="ic"><use href="#i-circle-check"/></svg>проверяешь</span></div></div>
       <div class="st"><span class="dot">4</span><h3>Видишь прогресс</h3><p>Трекер отмечает пройденное. Знаешь, где ты и что дальше. Без хаоса.</p><div class="vis"><span><svg class="ic"><use href="#i-chart-line"/></svg>трекер</span><span><svg class="ic"><use href="#i-compass"/></svg>план</span></div></div>
@@ -1422,7 +1428,7 @@ a{color:inherit}
       <div>
         <p class="lede">Одна оплата. Никаких «первый месяц бесплатно, потом списываем».</p>
         <p class="body" style="margin-top:16px;color:#d9d2c3">Это ≈ 9 центов за тему. Купил один раз и открываешь, когда нужно: перед экзаменом, перед звонком, перед собеседованием.</p>
-        <div class="row" style="margin-top:22px"><a class="btn red big" href="https://app.lava.top/801303618?tabId=products&amp;sort=published" target="_blank" rel="noopener">Забрать за 30 € <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>
+        <div class="row" style="margin-top:22px"><a class="btn red big" href="https://app.lava.top/801303618?tabId=products&amp;sort=published" target="_blank" rel="noopener">Забрать за 30 € <svg class="ic"><use href="#i-arrow-right"/></svg></a><a class="btn wa out" href="https://wa.me/message/D4YYEMPLIMNLA1" target="_blank" rel="noopener"><svg class="ic"><use href="#i-message-circle"/></svg> Через WhatsApp</a></div>
       </div>
     </div>
 
@@ -1475,12 +1481,16 @@ a{color:inherit}
       <span><b>≈ 9 центов за гайд.</b> 30 € делим на 340. Дешевле, чем пересдать хоть один экзамен.</span>
       <span>Цену планируем поднять после новых обновлений. Кто купил раньше, не доплачивает.</span>
     </div>
+    <div class="payalt rv">
+      <p><b>Неудобно платить по ссылке?</b>Напиши в WhatsApp. Поможем выбрать платформу, ответим на вопросы и оформим покупку прямо в чате.</p>
+      <a class="btn wa" href="https://wa.me/message/D4YYEMPLIMNLA1" target="_blank" rel="noopener"><svg class="ic"><use href="#i-message-circle"/></svg> Купить через WhatsApp</a>
+    </div>
 
     <div class="faq">
       <details><summary>Я учу по учебнику. Зачем мне ещё?<svg class="ic"><use href="#i-x"/></svg></summary><p>Учебник объясняет правило. Платформа объясняет, где ты на нём споткнёшься. Как здесь с тарелкой. Плюс озвучка, упражнения и разбор каждой ошибки.</p></details>
       <details><summary>У меня нет времени<svg class="ic"><use href="#i-x"/></svg></summary><p>Один гайд это 7–15 минут. Работает офлайн в приложении Notion. Дорога на работу уже твоё время.</p></details>
       <details><summary>У меня B1. Это не слишком просто?<svg class="ic"><use href="#i-x"/></svg></summary><p>Для B1–C1 есть отдельная платформа: экзаменационные темы, аутентичные тексты, диалоги от простого до конфликтного, ИИ-собеседник.</p></details>
-      <details><summary>Как я получу доступ?<svg class="ic"><use href="#i-x"/></svg></summary><p>Оплачиваешь по ссылке и получаешь доступ к платформе в Notion. Навсегда. Вопросы в Telegram: @stellasdeutsch.</p></details>
+      <details><summary>Как я получу доступ?<svg class="ic"><use href="#i-x"/></svg></summary><p>Два способа. Оплачиваешь по ссылке на lava.top или пишешь нам в <a href="https://wa.me/message/D4YYEMPLIMNLA1" target="_blank" rel="noopener">WhatsApp</a> и покупаешь прямо в чате. После оплаты получаешь доступ к платформе в Notion. Навсегда. Вопросы также в Telegram: @stellasdeutsch.</p></details>
     </div>
   </div>
 </section>
@@ -1491,6 +1501,7 @@ a{color:inherit}
     <p class="lede" style="margin-top:20px">Ты уже доказал, что можешь разобрать тему за 12 минут. Теперь сделай это системой.</p>
     <div class="row" style="margin-top:28px">
       <a class="btn red big" href="https://app.lava.top/801303618?tabId=products&amp;sort=published" target="_blank" rel="noopener">Платформа A0–C1 · 30 € <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+      <a class="btn wa" href="https://wa.me/message/D4YYEMPLIMNLA1" target="_blank" rel="noopener"><svg class="ic"><use href="#i-message-circle"/></svg> Купить через WhatsApp</a>
       <a class="btn ghost" href="https://t.me/stellasdeutsch" target="_blank" rel="noopener"><svg class="ic"><use href="#i-send"/></svg> Спросить в Telegram</a>
     </div>
   </div>
@@ -2018,7 +2029,7 @@ function zwInit(){
   /* ---------- v2: picker ---------- */
   (function(){
     var pk = $('#pick2'); if(!pk) return;
-    var res = $('#pickRes'), L = 'https://app.lava.top/801303618?tabId=products&amp;sort=published';
+    var WA = 'https://wa.me/message/D4YYEMPLIMNLA1', res = $('#pickRes'), L = 'https://app.lava.top/801303618?tabId=products&amp;sort=published';
     var R = [
       {lv:'рекомендуем', t:'A0 → A2 · 20 €', p:'Алфавит, артикли, первые фразы. Лексика для жизни: врач, касса, Jobcenter. Шаг за шагом, без каши.', b:'Взять A0–A2'},
       {lv:'рекомендуем', t:'A0 → C1 · 30 €', p:'Закроешь дыры в A2 и сразу пойдёшь в B1. Без второй покупки, когда вырастешь. Дешевле, чем две по отдельности.', b:'Взять всё за 30 €'},
@@ -2028,7 +2039,7 @@ function zwInit(){
     function show(i, anim){
       $$('.opts button', pk).forEach(function(b, k){ b.classList.toggle('on', k===i); });
       var r = R[i];
-      res.innerHTML = '<span class="lv">' + r.lv + '</span><h3>' + r.t + '</h3><p>' + r.p + '</p><div class="row"><a class="btn ink" href="' + L + '" target="_blank" rel="noopener">' + r.b + ' <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>';
+      res.innerHTML = '<span class="lv">' + r.lv + '</span><h3>' + r.t + '</h3><p>' + r.p + '</p><div class="row"><a class="btn ink" href="' + L + '" target="_blank" rel="noopener">' + r.b + ' <svg class="ic"><use href="#i-arrow-right"/></svg></a><a class="btn wa" href="' + WA + '" target="_blank" rel="noopener"><svg class="ic"><use href="#i-message-circle"/></svg> WhatsApp</a></div>';
       if(G && anim){ G.fromTo(res, {rotationX:-70, y:20, transformPerspective:800, transformOrigin:'50% 0'}, {rotationX:0, y:0, duration:.8, ease:'back.out(1.8)'}); G.from($('h3', res), {scale:1.3, rotation:-4, duration:.6, ease:'elastic.out(1,.5)'}); }
     }
     $$('.opts button', pk).forEach(function(b, k){ b.onclick = function(){ show(k, true); }; });
